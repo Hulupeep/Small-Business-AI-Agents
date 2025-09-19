@@ -22,7 +22,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - 24/7 availability with <1 second response time
 - Smart escalation to humans when needed
 - Works across email, chat, social media
-- [Full Implementation →](src/agents/customer_service.py) | [No-Code Guide →](make-your-own-agents/README.md#1--customer-service-agent)
+- [Get the Prompt →](prompts/CUSTOMER_SERVICE_ULTIMATE.md) | [No-Code Setup →](make-your-own-agents/README.md#1--customer-service-agent)
 
 ### 2. 🎯 **Lead Qualifier Agent**
 **Saves: 15 hrs/week** | **Increases sales: 40%**
@@ -30,7 +30,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Automatic CRM integration (HubSpot, Salesforce, Airtable)
 - Real-time sales alerts for hot leads
 - Multi-channel lead capture
-- [Full Implementation →](src/agents/lead_qualifier.py) | [No-Code Guide →](make-your-own-agents/README.md#2--lead-qualifier-agent)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#lead-qualifier) | [No-Code Setup →](make-your-own-agents/README.md#2--lead-qualifier-agent)
 
 ### 3. 💰 **Invoice Processing Agent**
 **Saves: $3,000+/month** | **Accuracy: 99.5%**
@@ -38,7 +38,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Automatic expense categorization
 - Duplicate and anomaly detection
 - QuickBooks/Xero integration
-- [Full Implementation →](src/agents/invoice_processor.py) | [No-Code Guide →](prompts/MASTER_PROMPTS.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#invoice-processor) | [Customization Guide →](templates/BUSINESS_CUSTOMIZATION.md#invoice-processor)
 
 ### 4. 📊 **Expense Categorizer Agent**
 **Saves: $500-1,000/month** in bookkeeping
@@ -46,7 +46,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Tax optimization and deduction identification
 - Pattern learning from history
 - Automated expense reports
-- [Full Implementation →](src/agents/expense_categorizer.py) | [No-Code Guide →](prompts/MASTER_PROMPTS.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#expense-categorizer) | [Customization Guide →](templates/BUSINESS_CUSTOMIZATION.md#expense-categorizer)
 
 ### 5. 📱 **Social Media Manager Agent**
 **Saves: 20+ hrs/week** | **Engagement: +40-60%**
@@ -54,7 +54,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Optimal scheduling based on analytics
 - Auto-response to comments
 - Competitor analysis
-- [Full Implementation →](src/agents/social_media_manager.py) | [No-Code Guide →](make-your-own-agents/README.md#4--social-media-agent)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#social-media-manager) | [No-Code Setup →](make-your-own-agents/README.md#4--social-media-agent)
 
 ### 6. ✉️ **Email Campaign Writer Agent**
 **Revenue increase: 30-50%** | **Open rates: +25-40%**
@@ -62,7 +62,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - A/B testing optimization
 - Smart segmentation
 - Performance tracking
-- [Full Implementation →](src/agents/email_campaign_writer.py) | [No-Code Guide →](make-your-own-agents/README.md#5--email-marketing-agent)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#email-campaign-writer) | [No-Code Setup →](make-your-own-agents/README.md#5--email-marketing-agent)
 
 ### 7. 📦 **Inventory Tracker Agent**
 **Prevents: $5,000+/month in stockouts**
@@ -70,7 +70,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - ML-powered demand forecasting
 - Automatic reorder alerts
 - Multi-location tracking
-- [Full Implementation →](src/agents/inventory_tracker.py) | [No-Code Guide →](prompts/MASTER_PROMPTS.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#inventory-tracker) | [Customization Guide →](templates/BUSINESS_CUSTOMIZATION.md#inventory-tracker)
 
 ### 8. 📅 **Meeting Scheduler Agent**
 **Saves: 10+ hrs/week** | **90% faster booking**
@@ -78,7 +78,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Calendar conflict resolution
 - Timezone handling
 - Automated reminders
-- [Full Implementation →](src/agents/meeting_scheduler.py) | [No-Code Guide →](videos/VIDEO_SCRIPTS.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#meeting-scheduler) | [Video Tutorial →](make-your-own-agents/videos/VIDEO_SCRIPTS.md)
 
 ### 9. ⭐ **Review Response Agent**
 **Worth: $3,000+/month** | **Retention: +25%**
@@ -86,7 +86,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Sentiment analysis
 - Professional response generation
 - Crisis detection
-- [Full Implementation →](src/agents/review_responder.py) | [No-Code Guide →](prompts/INDUSTRY_SPECIFIC.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#review-responder) | [Industry Examples →](prompts/INDUSTRY_SPECIFIC.md)
 
 ### 10. 📄 **Contract Analyzer Agent**
 **Saves: $2,000+/month in legal fees**
@@ -94,7 +94,7 @@ A complete toolkit for small businesses to build AI agents using Claude Code, Cu
 - Compliance checking
 - Template comparison
 - 80% faster review
-- [Full Implementation →](src/agents/contract_analyzer.py) | [No-Code Guide →](prompts/MASTER_PROMPTS.md)
+- [Get the Prompt →](prompts/MASTER_PROMPTS.md#contract-analyzer) | [Customization Guide →](templates/BUSINESS_CUSTOMIZATION.md#contract-analyzer)
 
 ---
 
