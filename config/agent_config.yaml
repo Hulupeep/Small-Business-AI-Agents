@@ -1,0 +1,353 @@
+# Marketing Automation Agents Configuration
+# Configuration file for Social Media Manager and Email Campaign Writer agents
+
+# Social Media Manager Configuration
+social_media_manager:
+  # Platform settings
+  platforms:
+    - twitter
+    - linkedin
+    - instagram
+    - facebook
+
+  # Content themes for automated generation
+  content_themes:
+    - "productivity tips"
+    - "industry insights"
+    - "behind the scenes"
+    - "customer success stories"
+    - "product updates"
+    - "thought leadership"
+    - "company culture"
+    - "educational content"
+
+  # Brand voice and tone
+  brand_voice: "professional and approachable"
+
+  # Target audiences and their preferences
+  target_audiences:
+    professionals:
+      interests: ["productivity", "career growth", "business strategy"]
+      tone: "professional"
+      preferred_times: ["09:00", "12:00", "17:00"]
+
+    entrepreneurs:
+      interests: ["startups", "innovation", "scaling", "funding"]
+      tone: "inspiring"
+      preferred_times: ["08:00", "14:00", "19:00"]
+
+    general:
+      interests: ["technology", "business", "innovation"]
+      tone: "friendly"
+      preferred_times: ["10:00", "13:00", "16:00"]
+
+  # Posting schedule optimization
+  optimal_posting:
+    twitter:
+      weekday_times: ["09:00", "12:00", "15:00", "18:00"]
+      weekend_times: ["10:00", "14:00", "20:00"]
+      max_posts_per_day: 5
+
+    linkedin:
+      weekday_times: ["08:00", "12:00", "17:00"]
+      weekend_times: ["10:00", "15:00"]
+      max_posts_per_day: 2
+
+    instagram:
+      weekday_times: ["11:00", "14:00", "17:00", "20:00"]
+      weekend_times: ["12:00", "15:00", "19:00"]
+      max_posts_per_day: 3
+
+    facebook:
+      weekday_times: ["09:00", "13:00", "15:00"]
+      weekend_times: ["11:00", "16:00"]
+      max_posts_per_day: 3
+
+  # Auto-response settings
+  auto_response:
+    enabled: true
+    response_delay_minutes: 15  # Wait 15 minutes before responding
+    sentiment_threshold: -0.3   # Only respond to comments above this sentiment
+    keywords_to_respond:
+      - "question"
+      - "help"
+      - "support"
+      - "thanks"
+      - "great"
+      - "amazing"
+      - "how"
+      - "what"
+      - "when"
+      - "where"
+      - "why"
+
+  # Performance tracking
+  analytics:
+    track_engagement: true
+    track_reach: true
+    track_clicks: true
+    track_conversions: true
+    update_frequency_hours: 6
+
+# Email Campaign Writer Configuration
+email_campaign_writer:
+  # Campaign types and their settings
+  campaign_types:
+    welcome:
+      subject_line_templates:
+        - "Welcome to {company_name}, {first_name}!"
+        - "Your journey with {company_name} starts now"
+        - "Thanks for joining us, {first_name}"
+      optimal_send_delay_hours: 1  # Send 1 hour after signup
+
+    promotional:
+      subject_line_templates:
+        - "Exclusive offer for {first_name}"
+        - "Limited time: {discount_percent}% off"
+        - "Don't miss out, {first_name}"
+      optimal_send_day: "tuesday"
+      optimal_send_time: "10:00"
+
+    newsletter:
+      subject_line_templates:
+        - "Your weekly {company_name} update"
+        - "This week in {industry}"
+        - "Featured: {main_topic}"
+      frequency: "weekly"
+      send_day: "wednesday"
+      send_time: "09:00"
+
+    abandoned_cart:
+      subject_line_templates:
+        - "Forgot something, {first_name}?"
+        - "Your cart is waiting"
+        - "Complete your purchase"
+      send_delays_hours: [2, 24, 72]  # Multi-touch sequence
+
+    re_engagement:
+      subject_line_templates:
+        - "We miss you, {first_name}"
+        - "Come back for exclusive offers"
+        - "Your account needs attention"
+      trigger_days_inactive: 30
+
+    upsell:
+      subject_line_templates:
+        - "Upgrade your {current_plan}"
+        - "Unlock premium features, {first_name}"
+        - "Take your {service} to the next level"
+      trigger_days_after_purchase: 14
+
+  # Personalization rules
+  personalization:
+    include_company_name: true
+    include_industry: true
+    include_location: false  # Set to false for privacy
+    include_past_purchases: true
+    include_engagement_history: true
+    dynamic_content_blocks: true
+
+  # Segmentation criteria
+  segmentation:
+    by_purchase_history:
+      high_value: 1000  # Customers who spent $1000+
+      medium_value: 200  # Customers who spent $200-999
+      low_value: 0      # Customers who spent $0-199
+
+    by_engagement:
+      high_engagement: 80    # Engagement score 80+
+      medium_engagement: 50  # Engagement score 50-79
+      low_engagement: 0      # Engagement score 0-49
+
+    by_lifecycle_stage:
+      - new
+      - active
+      - at_risk
+      - churned
+      - champion
+
+    by_behavior:
+      - frequent_buyer
+      - occasional_buyer
+      - browser_only
+      - newsletter_subscriber
+      - discount_hunter
+
+  # A/B testing configuration
+  ab_testing:
+    enabled: true
+    split_ratio: 0.5  # 50/50 split
+    minimum_sample_size: 100
+    test_duration_hours: 24
+    winner_threshold: 0.05  # 5% improvement needed to declare winner
+    metrics_to_test:
+      - open_rate
+      - click_through_rate
+      - conversion_rate
+      - revenue_per_email
+
+    elements_to_test:
+      - subject_line
+      - content_variant
+      - send_time
+      - call_to_action
+      - personalization_level
+
+# Platform API Configuration
+platform_apis:
+  twitter:
+    api_version: "v2"
+    rate_limit_per_hour: 300
+    retry_attempts: 3
+    timeout_seconds: 30
+
+  linkedin:
+    api_version: "v2"
+    rate_limit_per_hour: 100
+    retry_attempts: 3
+    timeout_seconds: 30
+
+  instagram:
+    api_version: "v18.0"
+    rate_limit_per_hour: 200
+    retry_attempts: 3
+    timeout_seconds: 30
+
+  facebook:
+    api_version: "v18.0"
+    rate_limit_per_hour: 200
+    retry_attempts: 3
+    timeout_seconds: 30
+
+  mailchimp:
+    api_version: "v3.0"
+    rate_limit_per_hour: 10000
+    retry_attempts: 3
+    timeout_seconds: 30
+
+  sendgrid:
+    api_version: "v3"
+    rate_limit_per_hour: 10000
+    retry_attempts: 3
+    timeout_seconds: 30
+
+# ROI Tracking Configuration
+roi_tracking:
+  hourly_rates:
+    social_media_manager: 50
+    email_marketing: 75
+    content_creation: 60
+    analytics: 65
+    general_marketing: 55
+
+  industry_baselines:
+    email_open_rate: 21.3
+    email_ctr: 2.6
+    social_engagement_rate: 1.9
+    conversion_rate: 2.35
+    cost_per_lead: 50
+    cost_per_acquisition: 150
+
+  business_metrics:
+    average_order_value: 150
+    customer_lifetime_value: 750
+    monthly_marketing_spend: 5000
+    target_monthly_leads: 200
+    target_monthly_revenue: 30000
+
+  reporting:
+    generate_daily_summary: true
+    generate_weekly_report: true
+    generate_monthly_report: true
+    email_reports_to: ["marketing@yourcompany.com"]
+    dashboard_refresh_minutes: 30
+
+# Automation Schedule
+automation_schedule:
+  social_media_manager:
+    content_generation_frequency: "daily"
+    content_generation_time: "08:00"
+    analytics_update_frequency: "every_6_hours"
+
+  email_campaign_writer:
+    segmentation_update_frequency: "daily"
+    campaign_optimization_frequency: "weekly"
+    performance_analysis_frequency: "daily"
+
+  roi_tracking:
+    metrics_collection_frequency: "hourly"
+    report_generation_frequency: "daily"
+
+# Integration Settings
+integrations:
+  openai:
+    model: "gpt-4"
+    max_tokens: 500
+    temperature: 0.7
+    fallback_model: "gpt-3.5-turbo"
+
+  analytics:
+    google_analytics: false
+    facebook_pixel: false
+    custom_tracking: true
+
+  crm:
+    hubspot: false
+    salesforce: false
+    custom_webhook: true
+
+  notifications:
+    slack: false
+    email: true
+    dashboard: true
+
+# Security and Privacy
+security:
+  encrypt_customer_data: true
+  data_retention_days: 365
+  anonymize_analytics: true
+  gdpr_compliance: true
+  ccpa_compliance: true
+
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 60
+    burst_allowance: 10
+
+  authentication:
+    require_api_keys: true
+    token_expiry_hours: 24
+    refresh_token_enabled: true
+
+# Performance Optimization
+performance:
+  cache_content_hours: 24
+  cache_analytics_minutes: 30
+  batch_api_requests: true
+  async_processing: true
+
+  limits:
+    max_concurrent_campaigns: 10
+    max_posts_per_batch: 50
+    max_emails_per_batch: 1000
+    max_api_retries: 3
+
+# Error Handling and Monitoring
+monitoring:
+  log_level: "INFO"
+  log_retention_days: 30
+  error_alerting: true
+  performance_monitoring: true
+
+  alerts:
+    api_failure_threshold: 5
+    low_engagement_threshold: 0.5
+    high_error_rate_threshold: 0.1
+
+  health_checks:
+    enabled: true
+    frequency_minutes: 5
+    endpoints:
+      - "/health"
+      - "/metrics"
+      - "/status"

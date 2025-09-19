@@ -1,0 +1,173 @@
+# Financial Automation Agents Configuration
+# Centralized configuration for invoice processing and expense categorization
+
+# Invoice Processing Configuration
+invoice_processor:
+  # OCR Settings
+  ocr:
+    engine: "tesseract"  # tesseract, easyocr, paddleocr
+    language: "eng"
+    confidence_threshold: 0.7
+    preprocessing:
+      denoise: true
+      deskew: true
+      enhance_contrast: true
+
+  # Supported file formats
+  supported_formats:
+    - ".pdf"
+    - ".png"
+    - ".jpg"
+    - ".jpeg"
+    - ".tiff"
+    - ".bmp"
+
+  # Processing settings
+  processing:
+    min_confidence_score: 0.7
+    max_file_size_mb: 50
+    timeout_seconds: 300
+
+  # Output settings
+  output:
+    directory: "processed_invoices"
+    save_original: true
+    export_formats: ["json", "csv"]
+
+  # Anomaly detection
+  anomaly_detection:
+    enabled: true
+    duplicate_threshold_days: 7
+    amount_std_threshold: 3.0
+    new_vendor_alert: true
+
+  # Business value tracking
+  business_metrics:
+    hourly_labor_rate: 25.0
+    target_processing_time_minutes: 2.0
+    accuracy_target: 95.0
+
+# Expense Categorizer Configuration
+expense_categorizer:
+  # Machine learning settings
+  ml_engine:
+    model_type: "random_forest"  # random_forest, naive_bayes
+    training_threshold: 10  # minimum transactions to train
+    retrain_frequency_days: 30
+    feature_extraction:
+      use_merchant: true
+      use_amount_ranges: true
+      use_date_features: true
+
+  # Rule-based categorization
+  rules:
+    confidence_threshold: 0.7
+    enable_merchant_mapping: true
+    enable_pattern_matching: true
+
+  # Tax categories and deductibility
+  tax_settings:
+    default_business_rate: 1.0
+    meals_deduction_rate: 0.5
+    vehicle_standard_rate: 0.575  # 2024 IRS rate
+    home_office_enabled: true
+
+  # Auto-categorization
+  auto_categorize:
+    enabled: true
+    min_confidence: 0.8
+    review_threshold: 0.5
+
+  # Business value tracking
+  business_metrics:
+    bookkeeper_hourly_rate: 30.0
+    manual_categorization_time_minutes: 2.0
+    accuracy_target: 90.0
+
+# Accounting Software Integrations
+accounting_integrations:
+  # QuickBooks Online
+  quickbooks:
+    enabled: false
+    sandbox: true
+    api_version: "v3"
+    base_url: "https://sandbox-quickbooks.api.intuit.com"
+    timeout_seconds: 30
+    retry_attempts: 3
+
+  # Xero
+  xero:
+    enabled: false
+    api_version: "2.0"
+    base_url: "https://api.xero.com/api.xro/2.0"
+    timeout_seconds: 30
+    retry_attempts: 3
+
+# Security and Authentication
+security:
+  # API keys (set via environment variables)
+  encryption_enabled: true
+  token_expiry_hours: 24
+  rate_limiting:
+    requests_per_minute: 60
+    burst_limit: 10
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file_path: "logs/financial_automation.log"
+  max_file_size_mb: 100
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Data Storage
+storage:
+  # Local storage settings
+  data_directory: "data"
+  backup_enabled: true
+  backup_frequency_hours: 24
+  retention_days: 365
+
+  # Database settings (optional)
+  database:
+    enabled: false
+    type: "sqlite"  # sqlite, postgresql, mysql
+    connection_pool_size: 5
+
+# Performance Settings
+performance:
+  # Processing limits
+  max_concurrent_jobs: 4
+  batch_size: 100
+  memory_limit_mb: 1024
+
+  # Caching
+  cache_enabled: true
+  cache_ttl_hours: 24
+  cache_max_size_mb: 512
+
+# Monitoring and Alerts
+monitoring:
+  # Metrics collection
+  metrics_enabled: true
+  metrics_interval_minutes: 15
+
+  # Alerting
+  alerts:
+    email_enabled: false
+    webhook_enabled: false
+    error_threshold: 5
+
+# Development Settings
+development:
+  debug_mode: false
+  test_data_enabled: false
+  profiling_enabled: false
+
+# API Configuration (if building web API)
+api:
+  enabled: false
+  host: "localhost"
+  port: 8000
+  cors_enabled: true
+  api_key_required: true

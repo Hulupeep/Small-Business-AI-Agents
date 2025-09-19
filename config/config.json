@@ -1,0 +1,91 @@
+{
+  "database": {
+    "url": "sqlite:///automation_agents.db",
+    "echo": false,
+    "pool_size": 5,
+    "max_overflow": 10,
+    "pool_timeout": 30
+  },
+  "notifications": {
+    "email_enabled": true,
+    "slack_enabled": false,
+    "sms_enabled": false,
+    "webhook_enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "from_email": "",
+    "default_email_recipients": [
+      "inventory.manager@company.com",
+      "operations@company.com"
+    ],
+    "slack_webhook_url": "",
+    "slack_channel": "#automation-alerts",
+    "twilio_account_sid": "",
+    "twilio_auth_token": "",
+    "twilio_from_number": "",
+    "default_sms_recipients": [
+      "+1234567890"
+    ],
+    "webhook_urls": []
+  },
+  "inventory": {
+    "monitoring_interval_minutes": 60,
+    "auto_generate_pos": true,
+    "critical_stock_multiplier": 0.5,
+    "min_data_points_forecasting": 10,
+    "default_forecast_days": 30,
+    "confidence_level": 0.95,
+    "seasonality_detection_threshold": 0.2,
+    "stockout_cost_estimate": 500.0,
+    "holding_cost_annual_percentage": 0.20,
+    "automation_hourly_rate": 50.0,
+    "high_urgency_days_threshold": 7,
+    "critical_urgency_days_threshold": 3,
+    "excess_inventory_threshold": 1.2
+  },
+  "meeting_scheduler": {
+    "default_meeting_duration_minutes": 60,
+    "default_timezone": "UTC",
+    "business_hours_start": 9,
+    "business_hours_end": 17,
+    "max_alternative_suggestions": 5,
+    "flexibility_hours": 2,
+    "prefer_business_hours": true,
+    "intent_confidence_threshold": 0.6,
+    "entity_confidence_threshold": 0.7,
+    "google_calendar_enabled": false,
+    "outlook_calendar_enabled": false,
+    "calendly_enabled": false,
+    "scheduling_time_saved_per_meeting": 0.25,
+    "coordinator_hourly_rate": 75.0
+  },
+  "calendar_credentials": {
+    "google_client_id": "",
+    "google_client_secret": "",
+    "google_refresh_token": "",
+    "google_access_token": "",
+    "outlook_client_id": "",
+    "outlook_client_secret": "",
+    "outlook_tenant_id": "",
+    "outlook_access_token": "",
+    "calendly_api_token": "",
+    "calendly_user_uri": ""
+  },
+  "security": {
+    "secret_key": "your-secret-key-change-this-in-production",
+    "encryption_algorithm": "AES-256-GCM",
+    "token_expiry_hours": 24,
+    "max_login_attempts": 3,
+    "session_timeout_minutes": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_path": "logs/automation_agents.log",
+    "max_file_size_mb": 10,
+    "backup_count": 5,
+    "console_logging": true
+  }
+}

@@ -1,0 +1,78 @@
+# Financial Automation Agents - Dependencies
+# Core dependencies for invoice processing and expense categorization
+
+# Computer Vision and OCR
+opencv-python==4.8.1.78
+Pillow==10.0.1
+pytesseract==0.3.10
+PyMuPDF==1.23.8
+
+# Machine Learning and Data Science
+scikit-learn==1.3.2
+numpy==1.24.3
+pandas==2.1.4
+joblib==1.3.2
+
+# API Integrations
+requests==2.31.0
+requests-oauthlib==1.3.1
+oauthlib==3.2.2
+
+# Development and Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Optional: Enhanced image processing
+# imageio==2.31.6
+# scikit-image==0.22.0
+
+# Optional: Advanced OCR
+# easyocr==1.7.0
+# paddlepaddle==2.5.2
+# paddleocr==2.7.0.3
+
+# Configuration and Logging
+pyyaml==6.0.1
+python-dotenv==1.0.0
+
+# Data validation
+pydantic==2.5.0
+
+# HTTP client for API testing
+httpx==0.25.2
+
+# Async support (if needed)
+asyncio==3.4.3
+aiofiles==23.2.1
+
+# Database support (optional)
+# sqlalchemy==2.0.23
+# alembic==1.13.1
+
+# Monitoring and metrics
+psutil==5.9.6
+
+# Document processing
+python-docx==0.8.11
+openpyxl==3.1.2
+
+# Web framework (if building API)
+# fastapi==0.104.1
+# uvicorn==0.24.0
+
+# Security
+cryptography==41.0.8
+
+# Quality assurance
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Documentation
+# sphinx==7.2.6
+# sphinx-rtd-theme==1.3.0
