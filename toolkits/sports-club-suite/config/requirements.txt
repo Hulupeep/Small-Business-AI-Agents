@@ -1,0 +1,60 @@
+# Sports Club Management Suite - Real Working Dependencies
+
+# Core Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy>=2.0.23
+sqlite3  # Built-in with Python
+
+# Authentication & Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-dotenv>=1.0.0
+
+# Date/Time Handling
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# Communication Services
+twilio>=8.8.0           # SMS messaging
+sendgrid>=6.10.0        # Email service
+
+# Payment Processing
+stripe>=7.8.0           # Payment processing
+
+# Data Processing
+pandas>=2.1.4           # Data analysis
+openpyxl>=3.1.2         # Excel export/import
+
+# Email & Phone Validation
+email-validator>=2.1.0
+phonenumbers>=8.13.0
+
+# Web Templates
+jinja2>=3.1.2
+
+# HTTP Requests
+requests>=2.31.0
+
+# Calendar Support
+icalendar>=5.0.11
+
+# PDF Generation (optional)
+reportlab>=4.0.7
+
+# Data Validation
+pydantic>=2.5.0
+
+# Development & Testing
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+black>=23.11.0
+
+# Production Server
+gunicorn>=21.2.0
+
+# Environment Variables
+python-decouple>=3.8

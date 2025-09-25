@@ -1,0 +1,297 @@
+# Pricing Models Configuration for IT Consultants
+
+# Base Hourly Rates (EUR)
+base_hourly_rates:
+  consultant_level:
+    junior: 65
+    mid_level: 85
+    senior: 110
+    expert: 140
+    strategic: 180
+
+  service_type:
+    strategy_consultation: 120
+    technical_implementation: 95
+    project_management: 85
+    training_delivery: 75
+    emergency_support: 150
+    security_assessment: 130
+    code_review: 100
+    devops_implementation: 105
+
+# Regional Rate Multipliers
+regional_multipliers:
+  UK:
+    london: 1.2
+    manchester: 1.0
+    birmingham: 0.95
+    edinburgh: 1.05
+    other: 0.9
+
+  Europe:
+    switzerland: 1.4
+    netherlands: 1.15
+    germany: 1.1
+    france: 1.05
+    ireland: 1.1
+    nordic: 1.2
+    eastern_europe: 0.8
+
+  Remote:
+    same_timezone: 1.0
+    different_timezone: 0.95
+
+# Industry Premium Multipliers
+industry_multipliers:
+  fintech: 1.3          # High security/compliance requirements
+  healthtech: 1.25      # HIPAA/medical compliance
+  aerospace: 1.4        # High security/safety requirements
+  government: 1.2       # Compliance complexity
+  banking: 1.35         # Regulatory requirements
+  insurance: 1.15       # Compliance needs
+  ecommerce: 1.0        # Standard complexity
+  manufacturing: 1.1    # IoT/integration complexity
+  education: 0.9        # Often budget-constrained
+  nonprofit: 0.8        # Social impact discount
+
+# Complexity Multipliers
+complexity_multipliers:
+  simple: 1.0           # Standard implementation
+  moderate: 1.3         # Some integration/customization
+  complex: 1.7          # Multiple systems/high customization
+  enterprise: 2.2       # Large scale/mission critical
+
+  risk_factors:
+    legacy_systems: 0.2
+    tight_deadline: 0.3
+    regulatory_compliance: 0.4
+    mission_critical: 0.3
+    24_7_availability: 0.5
+
+# Project Type Pricing Models
+project_types:
+  assessment:
+    base_days: 3
+    hourly_rate_multiplier: 1.2
+    fixed_price_model: true
+    typical_range: [2500, 8000]
+
+  migration:
+    base_days: 15
+    hourly_rate_multiplier: 1.1
+    complexity_impact: high
+    typical_range: [15000, 75000]
+
+  implementation:
+    base_days: 20
+    hourly_rate_multiplier: 1.0
+    complexity_impact: high
+    typical_range: [20000, 100000]
+
+  optimization:
+    base_days: 8
+    hourly_rate_multiplier: 1.1
+    ongoing_model: true
+    typical_range: [8000, 25000]
+
+  security_audit:
+    base_days: 5
+    hourly_rate_multiplier: 1.4
+    fixed_price_model: true
+    typical_range: [5000, 20000]
+
+  training:
+    base_days: 2
+    hourly_rate_multiplier: 0.8
+    group_discounts: true
+    typical_range: [1500, 5000]
+
+# Value-Based Pricing Guidelines
+value_based_pricing:
+  cost_reduction_projects:
+    percentage_of_savings: 25    # 25% of first year savings
+    minimum_fee: 10000
+    maximum_fee: 150000
+
+  revenue_generation_projects:
+    percentage_of_revenue: 15    # 15% of attributed revenue increase
+    minimum_fee: 15000
+    maximum_fee: 200000
+
+  efficiency_improvements:
+    time_savings_multiplier: 2000  # EUR per hour/week saved
+    process_improvement_base: 20000
+
+  risk_mitigation:
+    security_improvement_base: 25000
+    compliance_achievement: 30000
+    downtime_prevention_multiplier: 5000  # per hour of downtime prevented
+
+# Package Pricing Models
+package_deals:
+  startup_package:
+    name: "Startup Tech Foundation"
+    services:
+      - Initial technology assessment
+      - Basic security audit
+      - Cloud migration planning
+      - 3 months advisory support
+    fixed_price: 15000
+    target_client_size: "10-50 employees"
+
+  growth_package:
+    name: "Scale-Up Technology Optimization"
+    services:
+      - Comprehensive tech stack review
+      - Performance optimization
+      - Security enhancement
+      - DevOps implementation
+      - 6 months support
+    fixed_price: 35000
+    target_client_size: "50-200 employees"
+
+  enterprise_package:
+    name: "Enterprise Digital Transformation"
+    services:
+      - Strategic technology roadmap
+      - Legacy system modernization
+      - Security & compliance audit
+      - Team training program
+      - 12 months strategic support
+    fixed_price: 85000
+    target_client_size: "200+ employees"
+
+# Retainer Models
+retainer_models:
+  basic_support:
+    monthly_fee: 3500
+    included_hours: 10
+    overflow_rate: 95
+    response_time: "next_business_day"
+
+  premium_support:
+    monthly_fee: 7500
+    included_hours: 20
+    overflow_rate: 85
+    response_time: "4_hours"
+
+  strategic_advisory:
+    monthly_fee: 12000
+    included_hours: 25
+    overflow_rate: 120
+    response_time: "2_hours"
+    includes:
+      - Monthly strategic review
+      - Technology trend analysis
+      - Vendor negotiation support
+      - Emergency response priority
+
+# Discount Structures
+discount_structures:
+  volume_discounts:
+    "100-200_hours": 5
+    "200-500_hours": 10
+    "500+_hours": 15
+
+  long_term_contracts:
+    "6_months": 5
+    "12_months": 10
+    "24_months": 15
+
+  multi_project_discounts:
+    "2_projects": 5
+    "3_projects": 8
+    "4+_projects": 12
+
+  referral_discounts:
+    referring_client: 10
+    new_client: 5
+
+  nonprofit_discount: 20
+  startup_discount: 15  # For companies < 2 years old
+
+# Payment Terms
+payment_terms:
+  standard:
+    net_days: 30
+    late_fee_percentage: 2
+    currency: EUR
+
+  project_milestones:
+    upfront: 30
+    milestone_50_percent: 40
+    completion: 30
+
+  retainer:
+    advance_payment: true
+    payment_day: 1  # 1st of month
+    auto_renewal: true
+
+  large_projects:
+    upfront: 25
+    monthly_progress: 60
+    completion: 15
+
+# Cost Calculation Formulas
+cost_calculation:
+  overhead_percentage: 15      # Office, insurance, tools, etc.
+  profit_margin: 25           # Target profit margin
+  tax_consideration: 20       # VAT/corporate tax planning
+
+  time_estimation_buffers:
+    requirements_analysis: 10  # % buffer for scope clarification
+    implementation: 20         # % buffer for unexpected issues
+    testing: 15               # % buffer for quality assurance
+    deployment: 25            # % buffer for go-live issues
+
+  risk_contingency:
+    low_risk: 10
+    medium_risk: 20
+    high_risk: 35
+
+# Competitive Intelligence
+market_benchmarks:
+  hourly_rates:
+    uk_average: 95
+    uk_london_premium: 115
+    europe_average: 85
+    us_equivalent: 120
+
+  project_sizes:
+    small_project: [5000, 15000]
+    medium_project: [15000, 50000]
+    large_project: [50000, 150000]
+    enterprise_project: [150000, 500000]
+
+# Proposal Optimization
+proposal_optimization:
+  win_rate_targets:
+    assessment_projects: 70
+    implementation_projects: 45
+    enterprise_deals: 25
+    retainer_agreements: 60
+
+  pricing_strategies:
+    aggressive: 0.9     # 10% below market rate
+    competitive: 1.0    # Market rate
+    premium: 1.15       # 15% above market rate
+    luxury: 1.3         # 30% above market rate
+
+  decision_factors:
+    price_sensitivity_high: "aggressive"
+    quality_focused: "premium"
+    relationship_based: "competitive"
+    urgency_high: "premium"
+
+# Annual Rate Reviews
+annual_adjustments:
+  inflation_adjustment: 3     # Annual % increase for inflation
+  skill_development_premium: 5 # Additional % for new certifications
+  market_demand_multiplier: 1.1 # Adjust based on market conditions
+
+  review_triggers:
+    - new_major_certification
+    - market_rate_increase
+    - specialist_skill_acquisition
+    - client_success_milestone
+    - competitive_intelligence_update

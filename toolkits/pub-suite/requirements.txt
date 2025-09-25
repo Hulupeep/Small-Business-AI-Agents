@@ -1,0 +1,74 @@
+# Pub Suite - Dependencies
+# Table booking and stock management for pubs
+
+# Core Python libraries
+asyncio==3.4.3  # For async operations
+dataclasses-json==0.6.3  # Data serialization
+typing-extensions==4.8.0  # Type hints
+
+# Data handling
+pandas==2.1.4  # Basic data management
+openpyxl==3.1.2  # Excel import/export for inventory
+
+# Web framework
+flask==3.0.0  # Simple web framework for booking interface
+gunicorn==21.2.0  # WSGI server
+flask-sqlalchemy==3.1.1  # Database integration
+
+# Database
+sqlalchemy==2.0.23  # Database ORM
+sqlite3  # Built into Python - local database
+
+# Date/time handling
+python-dateutil==2.8.2  # Date parsing for bookings
+calendar  # Built into Python - calendar functions
+datetime  # Built into Python - date/time
+
+# Email and SMS
+flask-mail==0.9.1  # Email confirmations
+smtplib  # Built into Python
+twilio==8.10.2  # SMS reminders (optional)
+
+# Forms and validation
+wtforms==3.1.1  # Form handling
+email-validator==2.1.0  # Email validation
+
+# Configuration
+python-dotenv==1.0.0  # Environment variables
+configparser  # Built into Python
+
+# Templates
+jinja2==3.1.2  # HTML templating
+
+# PDF/Printing (for receipts)
+reportlab==4.0.7  # PDF generation
+pillow==10.1.0  # Image handling
+
+# Basic calculations
+decimal  # Built into Python - precise decimal calculations
+
+# Security
+flask-bcrypt==1.0.1  # Password hashing
+flask-login==0.6.3  # Session management
+
+# Logging
+logging  # Built into Python
+python-json-logger==2.0.7  # Structured logging
+
+# Testing
+pytest==7.4.3  # Testing framework
+pytest-flask==1.3.0  # Flask testing tools
+
+# Calendar integration (optional)
+google-api-python-client==2.108.0  # Google Calendar (optional)
+google-auth-oauthlib==1.1.0  # Google OAuth
+
+# File handling
+pathlib  # Built into Python
+uuid  # Built into Python
+json  # Built into Python
+csv  # Built into Python
+
+# Random number generation (for confirmation codes)
+random  # Built into Python
+string  # Built into Python

@@ -1,0 +1,257 @@
+# LinkedIn Automation Configuration for IT Consultants
+
+# Target Criteria
+target_industries:
+  - fintech
+  - healthtech
+  - ecommerce
+  - manufacturing
+  - logistics
+  - real_estate_tech
+  - edtech
+  - martech
+
+company_size_ranges:
+  - "50-200"     # Mid-market sweet spot
+  - "200-1000"   # Enterprise opportunities
+  - "1000-5000"  # Large enterprise (premium rates)
+
+geographic_focus:
+  - UK
+  - Ireland
+  - Netherlands
+  - Germany
+  - France
+  - Belgium
+  - Switzerland
+  - Nordic_countries
+
+# Technology Stack Indicators (for pain point identification)
+tech_stack_indicators:
+  cms_platforms:
+    - WordPress
+    - Drupal
+    - Joomla
+    - Shopify
+    - Magento
+
+  cloud_platforms:
+    - AWS
+    - Azure
+    - Google_Cloud
+    - DigitalOcean
+    - Heroku
+
+  security_tools:
+    - Cloudflare
+    - Qualys
+    - Rapid7
+    - CrowdStrike
+
+  development_frameworks:
+    - React
+    - Angular
+    - Vue.js
+    - Laravel
+    - Django
+    - Node.js
+
+# Outreach Limits (to avoid LinkedIn restrictions)
+outreach_limits:
+  linkedin_daily:
+    connection_requests: 50
+    messages: 30
+    profile_views: 100
+
+  email_daily:
+    cold_emails: 100
+    follow_ups: 50
+
+  weekly_totals:
+    new_prospects: 200
+    active_conversations: 75
+
+# Message Templates by Industry
+message_templates:
+  linkedin_connection:
+    fintech: |
+      Hi {name}, I noticed your work in financial technology at {company}.
+      I help fintech companies implement robust security and compliance solutions.
+      Would love to connect and share insights about PCI DSS and fraud prevention best practices!
+
+    healthtech: |
+      Hi {name}, Your healthcare technology initiatives at {company} caught my attention.
+      I specialize in HIPAA-compliant infrastructure and interoperability solutions for healthcare companies.
+      Happy to connect and discuss industry challenges!
+
+    ecommerce: |
+      Hi {name}, I see {company} is scaling in the e-commerce space.
+      I help online retailers optimize their tech stack for performance, security, and growth.
+      Would be great to connect and exchange insights!
+
+    manufacturing: |
+      Hi {name}, I noticed {company}'s work in manufacturing technology.
+      I help manufacturing companies with IoT implementation, digital transformation, and automation.
+      Would love to connect and discuss Industry 4.0 trends!
+
+    default: |
+      Hi {name}, I help companies optimize their technology infrastructure for growth and security.
+      Noticed some interesting challenges at {company} that I've helped similar organizations solve.
+      Would love to connect!
+
+  follow_up_sequences:
+    sequence_1:
+      day_3: |
+        Hi {name}, thanks for connecting! I've been following {company}'s growth in {industry}.
+        Quick question: what's your biggest technology challenge right now?
+
+      day_7: |
+        Hi {name}, I recently helped a {industry} company similar to {company} reduce their infrastructure costs by 35%.
+        They were facing {common_pain_point}. Is this something you're dealing with as well?
+
+      day_14: |
+        Hi {name}, I put together a brief analysis of common {industry} technology challenges.
+        Would you find a 15-minute call valuable to discuss what I'm seeing in the market?
+
+# Lead Scoring Criteria
+lead_scoring:
+  company_factors:
+    size_50_200: 20
+    size_200_1000: 25
+    size_1000_plus: 15
+
+    growth_stage:
+      startup: 15
+      scale_up: 25
+      established: 20
+      enterprise: 15
+
+    funding_recent: 15
+
+  technology_indicators:
+    outdated_cms: 20
+    no_cloud_infrastructure: 25
+    security_gaps: 30
+    performance_issues: 20
+    compliance_needs: 35
+
+  decision_maker_access:
+    cto_direct: 30
+    it_director: 25
+    coo_cfo: 20
+    founder_ceo: 15
+
+  engagement_signals:
+    profile_view_back: 10
+    post_engagement: 15
+    content_download: 20
+    website_visit: 25
+
+# Industry-Specific Pain Points
+industry_pain_points:
+  fintech:
+    - PCI DSS compliance gaps
+    - Real-time fraud detection needs
+    - API security vulnerabilities
+    - Regulatory reporting automation
+    - Open banking integration challenges
+
+  healthtech:
+    - HIPAA compliance requirements
+    - Patient data encryption gaps
+    - Interoperability challenges
+    - Legacy system integration
+    - Telehealth infrastructure needs
+
+  ecommerce:
+    - Website performance during peak traffic
+    - Payment gateway optimization
+    - Inventory management integration
+    - Customer data security
+    - Mobile optimization needs
+
+  manufacturing:
+    - IoT device security
+    - Legacy system modernization
+    - Real-time production monitoring
+    - Supply chain digitization
+    - Predictive maintenance systems
+
+# Competitor Analysis Keywords
+competitor_keywords:
+  - "IT consultant"
+  - "technology consultant"
+  - "digital transformation"
+  - "cloud migration"
+  - "cybersecurity consultant"
+  - "systems integration"
+  - "DevOps consultant"
+
+# Success Metrics
+success_metrics:
+  response_rate_target: 25    # % of connections that respond
+  meeting_rate_target: 15     # % that agree to meetings
+  proposal_rate_target: 8     # % that request proposals
+  conversion_rate_target: 3   # % that become clients
+
+  monthly_targets:
+    new_connections: 400
+    meaningful_conversations: 100
+    discovery_calls: 40
+    proposals_sent: 15
+    clients_acquired: 3
+
+# Automation Settings
+automation_settings:
+  connection_request_delay:
+    min_seconds: 30
+    max_seconds: 120
+
+  message_delay:
+    min_seconds: 60
+    max_seconds: 300
+
+  profile_view_delay:
+    min_seconds: 15
+    max_seconds: 45
+
+  daily_schedule:
+    start_time: "09:00"
+    end_time: "17:00"
+    timezone: "Europe/London"
+
+  weekend_activity: false
+
+  safety_limits:
+    max_actions_per_hour: 30
+    max_daily_actions: 250
+    cooldown_if_restricted: 24  # hours
+
+# Content Strategy
+content_strategy:
+  posting_frequency: "3_times_per_week"
+
+  content_types:
+    - industry_insights
+    - case_studies
+    - technology_trends
+    - best_practices
+    - client_success_stories
+
+  engagement_strategy:
+    comment_on_prospects: true
+    share_relevant_content: true
+    engage_with_industry_leaders: true
+
+  hashtag_strategy:
+    primary:
+      - ITConsultant
+      - DigitalTransformation
+      - Cybersecurity
+      - CloudMigration
+      - TechLeadership
+
+    industry_specific:
+      fintech: [FinTech, PCI, FraudPrevention, PaymentSecurity]
+      healthtech: [HealthTech, HIPAA, HealthIT, MedTech]
+      ecommerce: [Ecommerce, RetailTech, OnlineRetail, Shopify]

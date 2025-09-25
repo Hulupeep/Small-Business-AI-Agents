@@ -1,0 +1,47 @@
+sku,name,category,size,color,price,quantity,brand,description,tags,last_sold
+DRESS001,Floral Midi Dress,dresses,8,floral,89.99,3,Bella Rosa,Beautiful midi dress with floral print perfect for spring,floral;midi;spring;feminine,2024-01-15
+DRESS002,Floral Midi Dress,dresses,10,floral,89.99,2,Bella Rosa,Beautiful midi dress with floral print perfect for spring,floral;midi;spring;feminine,2024-01-18
+DRESS003,Floral Midi Dress,dresses,12,floral,89.99,1,Bella Rosa,Beautiful midi dress with floral print perfect for spring,floral;midi;spring;feminine,2024-01-20
+DRESS004,Black Evening Dress,dresses,8,black,149.99,2,Elegance,Sophisticated black evening dress for special occasions,black;evening;formal;elegant,2024-01-10
+DRESS005,Black Evening Dress,dresses,10,black,149.99,1,Elegance,Sophisticated black evening dress for special occasions,black;evening;formal;elegant,2024-01-12
+DRESS006,Red Midi Dress,dresses,10,red,139.99,2,Bella Rosa,Stunning red midi dress perfect for date nights,red;midi;date;night;bold,2024-01-22
+DRESS007,Navy Wrap Dress,dresses,12,navy,99.99,3,Classic Line,Versatile navy wrap dress for work or weekend,navy;wrap;versatile;classic,2024-01-25
+
+TOP001,White Button Shirt,tops,S,white,59.99,5,Professional,Classic white button-down shirt perfect for work,white;classic;work;professional,2024-01-20
+TOP002,White Button Shirt,tops,M,white,59.99,4,Professional,Classic white button-down shirt perfect for work,white;classic;work;professional,2024-01-24
+TOP003,White Button Shirt,tops,L,white,59.99,3,Professional,Classic white button-down shirt perfect for work,white;classic;work;professional,2024-01-16
+TOP004,Silk Blouse,tops,S,cream,79.99,2,Luxe,Elegant silk blouse in cream color,silk;cream;elegant;luxury,2024-01-14
+TOP005,Silk Blouse,tops,M,cream,79.99,1,Luxe,Elegant silk blouse in cream color,silk;cream;elegant;luxury,2024-01-19
+TOP006,Striped Sweater,tops,M,navy,69.99,4,Cozy Co,Comfortable striped sweater perfect for casual days,striped;navy;casual;comfortable,2024-01-23
+TOP007,Lace Top,tops,S,white,65.99,2,Romantic,Delicate lace top perfect for special occasions,lace;white;romantic;delicate,2024-01-11
+
+PANT001,Black Tailored Trousers,bottoms,8,black,89.99,3,Professional,High-quality black trousers perfect for office wear,black;tailored;office;professional,2024-01-21
+PANT002,Black Tailored Trousers,bottoms,10,black,89.99,2,Professional,High-quality black trousers perfect for office wear,black;tailored;office;professional,2024-01-26
+PANT003,Black Tailored Trousers,bottoms,12,black,89.99,4,Professional,High-quality black trousers perfect for office wear,black;tailored;office;professional,2024-01-17
+PANT004,High-waist Jeans,bottoms,8,blue,79.99,5,Denim Co,Trendy high-waist jeans in classic blue,jeans;blue;trendy;high-waist,2024-01-27
+PANT005,High-waist Jeans,bottoms,10,blue,79.99,3,Denim Co,Trendy high-waist jeans in classic blue,jeans;blue;trendy;high-waist,2024-01-25
+PANT006,Wide Leg Pants,bottoms,10,beige,95.99,2,Modern,Stylish wide leg pants in neutral beige,wide-leg;beige;stylish;neutral,2024-01-13
+
+JACKET001,Navy Blazer,jackets,S,navy,129.99,2,Professional,Classic navy blazer perfect for business meetings,navy;blazer;business;classic,2024-01-18
+JACKET002,Navy Blazer,jackets,M,navy,129.99,1,Professional,Classic navy blazer perfect for business meetings,navy;blazer;business;classic,2024-01-22
+JACKET003,Leather Jacket,jackets,S,black,189.99,1,Edge,Stylish black leather jacket for casual chic look,leather;black;casual;chic,2024-01-09
+JACKET004,Cardigan,jackets,M,beige,69.99,4,Cozy Co,Soft beige cardigan perfect for layering,cardigan;beige;soft;layering,2024-01-24
+
+SHOE001,Black Ankle Boots,shoes,7,black,99.99,3,Step Style,Comfortable black ankle boots perfect for everyday wear,boots;black;comfortable;everyday,2024-01-26
+SHOE002,Black Ankle Boots,shoes,8,black,99.99,2,Step Style,Comfortable black ankle boots perfect for everyday wear,boots;black;comfortable;everyday,2024-01-28
+SHOE003,Block Heels,shoes,7,nude,119.99,2,Elegance,Comfortable block heels in nude color,heels;nude;comfortable;block,2024-01-15
+SHOE004,Block Heels,shoes,8,nude,119.99,1,Elegance,Comfortable block heels in nude color,heels;nude;comfortable;block,2024-01-19
+SHOE005,White Sneakers,shoes,7,white,89.99,4,Comfort,Stylish white sneakers for casual days,sneakers;white;casual;stylish,2024-01-27
+SHOE006,White Sneakers,shoes,8,white,89.99,3,Comfort,Stylish white sneakers for casual days,sneakers;white;casual;stylish,2024-01-25
+
+BAG001,Leather Handbag,accessories,,black,129.99,2,Luxe,Premium black leather handbag with gold hardware,leather;black;premium;gold,2024-01-20
+BAG002,Leather Handbag,accessories,,brown,129.99,1,Luxe,Premium brown leather handbag with gold hardware,leather;brown;premium;gold,2024-01-16
+BAG003,Crossbody Bag,accessories,,beige,79.99,3,Daily,Practical beige crossbody bag for everyday use,crossbody;beige;practical;everyday,2024-01-23
+BAG004,Evening Clutch,accessories,,gold,59.99,2,Elegance,Elegant gold evening clutch for special occasions,clutch;gold;elegant;evening,2024-01-12
+
+SCARF001,Silk Scarf,accessories,,multi,39.99,5,Luxe,Beautiful silk scarf with colorful pattern,silk;colorful;beautiful;pattern,2024-01-21
+SCARF002,Wool Scarf,accessories,,gray,45.99,3,Cozy Co,Warm gray wool scarf perfect for winter,wool;gray;warm;winter,2024-01-14
+
+JEWELRY001,Statement Necklace,accessories,,gold,49.99,4,Sparkle,Bold gold statement necklace to elevate any outfit,necklace;gold;bold;statement,2024-01-17
+JEWELRY002,Pearl Earrings,accessories,,white,35.99,6,Classic,Elegant white pearl earrings for timeless style,pearls;white;elegant;timeless,2024-01-29
+JEWELRY003,Silver Bracelet,accessories,,silver,29.99,5,Modern,Sleek silver bracelet with modern design,bracelet;silver;sleek;modern,2024-01-18

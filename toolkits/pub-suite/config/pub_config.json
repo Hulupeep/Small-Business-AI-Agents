@@ -1,0 +1,253 @@
+{
+  "pub_profile": {
+    "name": "The Traditional Irish Pub",
+    "location": "Cork, Ireland",
+    "capacity": {
+      "main_bar": 80,
+      "function_room": 40,
+      "beer_garden": 60,
+      "snug": 12
+    },
+    "services": ["food", "accommodation", "live_music", "functions", "sports_viewing"],
+    "license_type": "full_on_license",
+    "operating_hours": {
+      "monday": {"open": "11:00", "close": "23:00"},
+      "tuesday": {"open": "11:00", "close": "23:00"},
+      "wednesday": {"open": "11:00", "close": "23:00"},
+      "thursday": {"open": "11:00", "close": "23:30"},
+      "friday": {"open": "11:00", "close": "01:00"},
+      "saturday": {"open": "11:00", "close": "01:00"},
+      "sunday": {"open": "12:00", "close": "23:00"}
+    }
+  },
+  "beer_lines": [
+    {
+      "line_id": "LINE1",
+      "beer_name": "Guinness",
+      "brewery": "Guinness",
+      "keg_size": 50.0,
+      "optimal_temperature": 4.0,
+      "optimal_pressure": 12.0,
+      "cleaning_frequency_days": 7
+    },
+    {
+      "line_id": "LINE2",
+      "beer_name": "Heineken",
+      "brewery": "Heineken",
+      "keg_size": 50.0,
+      "optimal_temperature": 3.5,
+      "optimal_pressure": 14.0,
+      "cleaning_frequency_days": 7
+    },
+    {
+      "line_id": "LINE3",
+      "beer_name": "Smithwick's",
+      "brewery": "Diageo",
+      "keg_size": 30.0,
+      "optimal_temperature": 4.0,
+      "optimal_pressure": 12.0,
+      "cleaning_frequency_days": 7
+    },
+    {
+      "line_id": "LINE4",
+      "beer_name": "Carlsberg",
+      "brewery": "Carlsberg",
+      "keg_size": 30.0,
+      "optimal_temperature": 3.5,
+      "optimal_pressure": 14.0,
+      "cleaning_frequency_days": 7
+    }
+  ],
+  "stock_categories": [
+    {
+      "category": "beer_kegs",
+      "items": [
+        {
+          "item_id": "KEG_GUINNESS_50",
+          "name": "Guinness Keg 50L",
+          "supplier": "Guinness Ireland",
+          "unit_cost": 125.00,
+          "min_threshold": 2,
+          "max_capacity": 8
+        },
+        {
+          "item_id": "KEG_HEINEKEN_50",
+          "name": "Heineken Keg 50L",
+          "supplier": "Heineken Ireland",
+          "unit_cost": 115.00,
+          "min_threshold": 2,
+          "max_capacity": 6
+        }
+      ]
+    },
+    {
+      "category": "spirits",
+      "items": [
+        {
+          "item_id": "JAMESON_700ML",
+          "name": "Jameson Irish Whiskey 700ml",
+          "supplier": "Irish Distillers",
+          "unit_cost": 24.50,
+          "min_threshold": 6,
+          "max_capacity": 24
+        },
+        {
+          "item_id": "VODKA_SMIRNOFF",
+          "name": "Smirnoff Vodka 700ml",
+          "supplier": "Diageo Ireland",
+          "unit_cost": 18.75,
+          "min_threshold": 4,
+          "max_capacity": 16
+        }
+      ]
+    },
+    {
+      "category": "wine",
+      "items": [
+        {
+          "item_id": "HOUSE_RED_750ML",
+          "name": "House Red Wine 750ml",
+          "supplier": "Wine Direct Ireland",
+          "unit_cost": 8.50,
+          "min_threshold": 12,
+          "max_capacity": 48
+        },
+        {
+          "item_id": "HOUSE_WHITE_750ML",
+          "name": "House White Wine 750ml",
+          "supplier": "Wine Direct Ireland",
+          "unit_cost": 8.50,
+          "min_threshold": 12,
+          "max_capacity": 48
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {"number": 1, "capacity": 2, "area": "main_bar"},
+    {"number": 2, "capacity": 4, "area": "main_bar"},
+    {"number": 3, "capacity": 4, "area": "main_bar"},
+    {"number": 4, "capacity": 6, "area": "main_bar"},
+    {"number": 5, "capacity": 8, "area": "main_bar"},
+    {"number": 6, "capacity": 2, "area": "snug"},
+    {"number": 7, "capacity": 4, "area": "snug"},
+    {"number": 8, "capacity": 6, "area": "snug"},
+    {"number": 9, "capacity": 4, "area": "beer_garden"},
+    {"number": 10, "capacity": 6, "area": "beer_garden"},
+    {"number": 11, "capacity": 8, "area": "beer_garden"},
+    {"number": 12, "capacity": 10, "area": "function_room"},
+    {"number": 13, "capacity": 12, "area": "function_room"},
+    {"number": 14, "capacity": 16, "area": "function_room"}
+  ],
+  "menu_categories": {
+    "starters": {
+      "prep_time_minutes": 8,
+      "items": ["Soup of the Day", "Chicken Wings", "Garlic Bread", "Seafood Chowder"]
+    },
+    "mains": {
+      "prep_time_minutes": 18,
+      "items": ["Fish & Chips", "Beef & Guinness Stew", "Bangers & Mash", "Chicken Curry", "Roast of the Day"]
+    },
+    "desserts": {
+      "prep_time_minutes": 5,
+      "items": ["Apple Tart", "Chocolate Brownie", "Ice Cream", "Bread & Butter Pudding"]
+    },
+    "sandwiches": {
+      "prep_time_minutes": 10,
+      "items": ["Club Sandwich", "BLT", "Toasted Special", "Soup & Sandwich"]
+    }
+  },
+  "staff_roles": {
+    "manager": {
+      "min_required": 1,
+      "max_per_shift": 2,
+      "hourly_rate_range": [18.00, 25.00],
+      "required_certifications": ["Personal Licence", "Food Safety Level 3", "First Aid"]
+    },
+    "bartender": {
+      "min_required": 2,
+      "max_per_shift": 4,
+      "hourly_rate_range": [12.50, 16.00],
+      "required_certifications": ["Responsible Service of Alcohol", "Food Safety Level 2"]
+    },
+    "server": {
+      "min_required": 1,
+      "max_per_shift": 3,
+      "hourly_rate_range": [11.50, 14.00],
+      "required_certifications": ["Food Safety Level 2"]
+    },
+    "kitchen_staff": {
+      "min_required": 1,
+      "max_per_shift": 2,
+      "hourly_rate_range": [13.00, 17.00],
+      "required_certifications": ["Food Safety Level 2", "HACCP"]
+    },
+    "security": {
+      "min_required": 0,
+      "max_per_shift": 2,
+      "hourly_rate_range": [15.00, 20.00],
+      "required_certifications": ["PSA Security Licence"],
+      "required_days": ["friday", "saturday"]
+    }
+  },
+  "automation_settings": {
+    "auto_order_limit": 200.00,
+    "low_stock_alert_threshold": 0.2,
+    "keg_change_warning_hours": 2,
+    "compliance_check_frequency_hours": 24,
+    "social_media_posting_times": ["09:00", "14:00", "18:00"],
+    "loyalty_points_per_euro": 1.0,
+    "backup_frequency_hours": 6
+  },
+  "local_partnerships": {
+    "sports_teams": ["Cork City FC", "Cork GAA Football", "Cork GAA Hurling"],
+    "local_attractions": [
+      "Blarney Castle",
+      "English Market",
+      "Cork City Gaol",
+      "Crawford Art Gallery",
+      "Blackrock Castle Observatory"
+    ],
+    "suppliers": {
+      "beer": ["Guinness Ireland", "Heineken Ireland", "Independent Brewing"],
+      "spirits": ["Irish Distillers", "Diageo Ireland", "Premium Spirits Ltd"],
+      "wine": ["Wine Direct Ireland", "Celtic Wines", "Boutique Wine Co"],
+      "food": ["Cork Food Hub", "Local Farm Suppliers", "Artisan Producers"]
+    },
+    "community_organizations": [
+      "Cork Chamber of Commerce",
+      "Cork Tourism Board",
+      "Local Residents Association",
+      "Cork Music Society"
+    ]
+  },
+  "compliance_requirements": {
+    "licensing": {
+      "premises_licence_renewal": "2024-12-31",
+      "personal_licence_holder": "required",
+      "music_licence": "required",
+      "tv_licence": "required"
+    },
+    "health_safety": {
+      "food_safety_inspection_frequency": "annual",
+      "fire_safety_certificate": "required",
+      "health_safety_statement": "required",
+      "insurance_renewal": "2024-08-15"
+    },
+    "employment": {
+      "minimum_wage_compliance": "required",
+      "working_time_directive": "required",
+      "equality_policies": "required",
+      "data_protection_compliance": "required"
+    }
+  },
+  "financial_targets": {
+    "annual_revenue_target": 750000.00,
+    "food_revenue_percentage": 35,
+    "beverage_revenue_percentage": 60,
+    "events_revenue_percentage": 5,
+    "gross_margin_target": 68,
+    "labor_cost_percentage_target": 28,
+    "monthly_operating_costs": 45000.00
+  }
+}

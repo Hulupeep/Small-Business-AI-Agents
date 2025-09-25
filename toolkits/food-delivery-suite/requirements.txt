@@ -1,0 +1,66 @@
+# Food Delivery Suite - Dependencies
+# Order management system for restaurants and takeaways
+
+# Core Python libraries
+asyncio==3.4.3  # For async operations
+dataclasses-json==0.6.3  # For data serialization
+typing-extensions==4.8.0  # Type hints support
+enum34==1.1.10  # Enhanced enum support
+
+# Data handling
+pandas==2.1.4  # Order data management
+numpy==1.25.2  # Basic calculations
+
+# Web framework
+fastapi==0.104.1  # Web API for order management
+uvicorn==0.24.0  # ASGI server
+websockets==12.0  # Real-time updates for kitchen display
+
+# Database
+sqlalchemy==2.0.23  # Database ORM
+sqlite3  # Built into Python - local database
+alembic==1.12.1  # Database migrations
+
+# HTTP requests (for delivery platform APIs)
+requests==2.31.0  # HTTP requests to delivery platforms
+httpx==0.25.2  # Async HTTP client
+aiohttp==3.9.1  # Alternative async HTTP client
+
+# Authentication/Security
+python-jose[cryptography]==3.3.0  # JWT token handling
+passlib[bcrypt]==1.7.4  # Password hashing
+
+# Date/time handling
+python-dateutil==2.8.2  # Date parsing
+arrow==1.3.0  # Better datetime handling
+
+# Notifications
+twilio==8.10.2  # SMS notifications (optional)
+sendgrid==6.10.0  # Email notifications (optional)
+
+# Configuration
+python-dotenv==1.0.0  # Environment variables
+pydantic==2.5.0  # Data validation
+pydantic-settings==2.1.0  # Settings management
+
+# Logging and monitoring
+python-json-logger==2.0.7  # Structured logging
+prometheus-client==0.19.0  # Basic metrics (optional)
+
+# Template rendering
+jinja2==3.1.2  # HTML templates for kitchen display
+
+# Testing
+pytest==7.4.3  # Testing framework
+pytest-asyncio==0.21.1  # Async testing
+httpx==0.25.2  # Testing HTTP endpoints
+
+# Background tasks
+celery==5.3.4  # Task queue (if needed)
+redis==5.0.1  # Redis for task queue/caching
+
+# File handling
+pathlib  # Built into Python
+uuid  # Built into Python
+json  # Built into Python
+csv  # Built into Python

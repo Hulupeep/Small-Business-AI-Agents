@@ -1,0 +1,55 @@
+# Farm Retail Suite - Dependencies
+# Basic inventory and sales management for farm shops
+
+# Core Python libraries
+asyncio==3.4.3  # For async operations
+dataclasses-json==0.6.3  # For data serialization
+typing-extensions==4.8.0  # Type hints support
+
+# Data handling
+pandas==2.1.4  # CSV data management and basic analytics
+openpyxl==3.1.2  # Excel file support for inventory imports
+
+# Web framework (if web interface needed)
+fastapi==0.104.1  # Lightweight web API
+uvicorn==0.24.0  # ASGI server
+jinja2==3.1.2  # HTML templating
+
+# Database (SQLite for simplicity)
+sqlite3  # Built into Python - local database
+sqlalchemy==2.0.23  # Database ORM for easier queries
+
+# Email notifications
+smtplib  # Built into Python - email sending
+email-validator==2.1.0  # Email address validation
+
+# Date/time handling
+python-dateutil==2.8.2  # Better date parsing
+pytz==2023.3  # Timezone support
+
+# PDF generation (for receipts/reports)
+reportlab==4.0.7  # PDF generation
+pillow==10.1.0  # Image processing
+
+# Configuration
+python-dotenv==1.0.0  # Environment variables
+pyyaml==6.0.1  # YAML config files
+
+# Basic logging
+logging  # Built into Python
+
+# Testing
+pytest==7.4.3  # Testing framework
+pytest-asyncio==0.21.1  # Async testing support
+
+# Optional: Payment processing (if needed)
+stripe==7.8.0  # Payment processing (if using Stripe)
+
+# Security
+bcrypt==4.1.2  # Password hashing
+cryptography==41.0.8  # Encryption for sensitive data
+
+# File handling
+pathlib  # Built into Python - file path handling
+uuid  # Built into Python - unique ID generation
+json  # Built into Python - JSON handling

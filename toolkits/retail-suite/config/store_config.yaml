@@ -1,0 +1,202 @@
+# Retail Store Configuration
+# Customize these settings for your specific boutique
+
+store:
+  name: "Threads & Things"
+  type: "boutique"
+  location: "Shop Street, Dublin"
+  website: "https://threadsandthings.ie"
+  phone: "+353-1-234-5678"
+  email: "hello@threadsandthings.ie"
+
+  # Business hours (for automated responses)
+  hours:
+    monday: "10:00-18:00"
+    tuesday: "10:00-18:00"
+    wednesday: "10:00-18:00"
+    thursday: "10:00-18:00"
+    friday: "10:00-19:00"
+    saturday: "10:00-19:00"
+    sunday: "12:00-17:00"
+
+  # Product categories
+  categories:
+    - "women's fashion"
+    - "dresses"
+    - "tops"
+    - "bottoms"
+    - "accessories"
+    - "shoes"
+    - "outerwear"
+
+# Inventory Management
+inventory:
+  system: "basic_csv"  # Options: basic_csv, shopify, square, lightspeed
+  file_path: "data/inventory.csv"
+
+  # Low stock alerts
+  low_stock_threshold: 3
+  out_of_stock_alerts: true
+
+  # Auto-reorder settings
+  auto_reorder_enabled: false
+  reorder_threshold: 2
+  reorder_quantity: 10
+
+# Customer Management
+customers:
+  system: "basic_csv"  # Options: basic_csv, shopify, mailchimp
+  file_path: "data/customers.csv"
+
+  # Loyalty program settings
+  loyalty:
+    points_per_euro: 1
+    tier_thresholds:
+      Bronze: 0
+      Silver: 500
+      Gold: 1500
+      VIP: 3000
+
+    tier_benefits:
+      Bronze:
+        discount: 0.00
+        early_access_days: 0
+        birthday_bonus: 50
+      Silver:
+        discount: 0.05
+        early_access_days: 1
+        birthday_bonus: 100
+      Gold:
+        discount: 0.10
+        early_access_days: 3
+        birthday_bonus: 200
+      VIP:
+        discount: 0.15
+        early_access_days: 7
+        birthday_bonus: 300
+
+# Social Media Settings
+social_media:
+  instagram:
+    handle: "@threadsandthings"
+    posting_times: ["10:00", "14:00", "18:00"]
+    hashtags:
+      always_include: ["#ThreadsAndThings", "#ShopLocal", "#BoutiqueStyle"]
+      trending: ["#OOTD", "#Fashion", "#Style", "#Dublin"]
+
+  facebook:
+    page_name: "Threads & Things Boutique"
+    posting_enabled: true
+
+  # Content generation settings
+  content_strategy:
+    new_arrivals_frequency: "daily"
+    styling_tips_frequency: "twice_weekly"
+    behind_scenes_frequency: "weekly"
+    sales_promotions_frequency: "weekly"
+
+# Communication Channels
+communication:
+  email:
+    enabled: true
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    from_address: "hello@threadsandthings.ie"
+
+  sms:
+    enabled: false
+    provider: "twilio"  # Options: twilio, nexmo
+
+  whatsapp:
+    enabled: false
+    business_number: "+353-1-234-5678"
+
+# AI Agent Settings
+ai_agents:
+  # Stock Assistant
+  stock_assistant:
+    enabled: true
+    hold_duration_hours: 2
+    suggestion_limit: 3
+    auto_response_enabled: true
+
+  # Loyalty Manager
+  loyalty_manager:
+    enabled: true
+    birthday_advance_days: 7
+    win_back_days: 60
+    vip_threshold_amount: 3000
+
+  # Social Media Manager
+  social_media_manager:
+    enabled: true
+    auto_posting: false  # Set to true for automatic posting
+    approval_required: true
+    content_calendar_days: 7
+
+  # Personal Shopper
+  personal_shopper:
+    enabled: true
+    style_quiz_enabled: true
+    outfit_recommendations: true
+    size_guide_enabled: true
+
+  # Analytics Engine
+  analytics_engine:
+    enabled: true
+    report_frequency: "daily"
+    performance_tracking: true
+    seasonal_analysis: true
+
+# Performance Targets
+targets:
+  daily_revenue: 800
+  avg_transaction_value: 95
+  conversion_rate: 0.25
+  inventory_turnover: 6
+  gross_margin: 0.60
+  customer_retention_rate: 0.70
+
+# Integration Settings
+integrations:
+  # E-commerce Platforms
+  shopify:
+    enabled: false
+    api_key: ""
+    shop_domain: ""
+
+  square:
+    enabled: false
+    access_token: ""
+    location_id: ""
+
+  # Email Marketing
+  mailchimp:
+    enabled: false
+    api_key: ""
+    list_id: ""
+
+  # Accounting
+  quickbooks:
+    enabled: false
+    client_id: ""
+    client_secret: ""
+
+# Security and Privacy
+security:
+  data_encryption: true
+  customer_data_retention_days: 2555  # 7 years
+  anonymize_old_data: true
+  gdpr_compliance: true
+
+# Backup and Monitoring
+backup:
+  enabled: true
+  frequency: "daily"
+  local_backup_path: "data/backups/"
+  cloud_backup_enabled: false
+
+monitoring:
+  health_checks: true
+  performance_logging: true
+  error_notifications: true

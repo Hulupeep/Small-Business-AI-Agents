@@ -1,0 +1,106 @@
+# Retail Suite - Dependencies
+# Inventory management and POS system for small retail stores
+
+# Core Python libraries
+asyncio==3.4.3  # For async operations
+dataclasses-json==0.6.3  # Data serialization
+typing-extensions==4.8.0  # Type hints
+decimal  # Built into Python - precise pricing
+
+# Data handling
+pandas==2.1.4  # Inventory data management
+numpy==1.25.2  # Basic calculations
+openpyxl==3.1.2  # Excel import/export for inventory
+
+# Database
+sqlalchemy==2.0.23  # Database ORM
+sqlite3  # Built into Python - local database
+alembic==1.12.1  # Database migrations
+
+# Web framework (for POS interface)
+flask==3.0.0  # Web interface
+gunicorn==21.2.0  # WSGI server
+flask-sqlalchemy==3.1.1  # Database integration
+
+# Barcode handling
+python-barcode==0.15.1  # Barcode generation
+pyzbar==0.1.9  # Barcode scanning/reading
+pillow==10.1.0  # Image processing for barcodes
+
+# Receipt generation
+reportlab==4.0.7  # PDF generation for receipts
+escpos==3.0.0  # Thermal printer support
+
+# Payment processing
+stripe==7.8.0  # Stripe payment processing
+square-python-sdk==27.1.0.20230921  # Square payment processing
+
+# Email and notifications
+flask-mail==0.9.1  # Email notifications
+email-validator==2.1.0  # Email validation
+smtplib  # Built into Python
+
+# Date/time handling
+python-dateutil==2.8.2  # Date parsing
+datetime  # Built into Python
+calendar  # Built into Python
+
+# Configuration
+python-dotenv==1.0.0  # Environment variables
+configparser  # Built into Python
+
+# Forms and validation
+wtforms==3.1.1  # Form handling
+marshmallow==3.20.1  # Data validation
+
+# Template rendering
+jinja2==3.1.2  # HTML templating
+
+# File handling
+pathlib  # Built into Python
+os  # Built into Python
+shutil  # Built into Python
+uuid  # Built into Python
+json  # Built into Python
+csv  # Built into Python
+
+# Security
+flask-bcrypt==1.0.1  # Password hashing
+flask-login==0.6.3  # Session management
+cryptography==41.0.8  # Data encryption
+
+# Logging
+logging  # Built into Python
+python-json-logger==2.0.7  # Structured logging
+
+# Basic analytics
+statistics  # Built into Python
+math  # Built into Python
+
+# HTTP requests (for integrations)
+requests==2.31.0  # HTTP client
+
+# Testing
+pytest==7.4.3  # Testing framework
+pytest-flask==1.3.0  # Flask testing
+faker==20.1.0  # Test data generation
+
+# Customer loyalty/CRM
+phonenumbers==8.13.25  # Phone number validation
+geopy==2.4.0  # Basic location services
+
+# Backup and sync
+schedule==1.2.0  # Scheduled tasks
+zipfile  # Built into Python - data backup
+
+# Optional integrations
+quickbooks-python==0.6.2  # QuickBooks integration (optional)
+xero-python==5.1.0  # Xero accounting integration (optional)
+
+# String processing
+string  # Built into Python
+re  # Built into Python
+
+# Random generation (for customer IDs, etc.)
+random  # Built into Python
+secrets  # Built into Python - secure random

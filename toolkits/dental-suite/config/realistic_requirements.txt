@@ -1,0 +1,74 @@
+# Realistic Dental Practice Toolkit - Requirements
+# These are the ACTUAL dependencies needed for practical functionality
+
+# Core AI/Language Model Support
+langchain>=0.1.0
+langchain-openai>=0.1.0
+openai>=1.0.0
+pydantic>=2.0.0
+
+# Web Framework for Basic Interface (optional)
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# Database (SQLite for small practices, PostgreSQL for larger)
+sqlalchemy>=2.0.0
+sqlite3-to-postgres>=1.0.0  # If upgrading later
+
+# Communication Services (Choose based on needs)
+twilio>=8.0.0              # For SMS reminders (~€0.05/SMS)
+sendgrid>=6.10.0           # For email notifications (~€0.001/email)
+
+# Calendar Integration
+google-api-python-client>=2.100.0  # For Google Calendar integration
+google-auth>=2.23.0
+
+# Data Processing & Security
+cryptography>=41.0.0       # For basic data encryption
+python-jose>=3.3.0         # For JWT tokens if needed
+passlib>=1.7.4             # For password hashing
+
+# File Handling
+python-multipart>=0.0.6    # For file uploads
+aiofiles>=23.2.0           # For async file operations
+
+# HTTP Requests
+httpx>=0.25.0              # For API calls to services
+requests>=2.31.0           # Backup HTTP library
+
+# Excel/CSV Support (for importing/exporting patient data)
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# PDF Generation (for reports/forms)
+reportlab>=4.0.0
+pypdf>=3.15.0
+
+# Development & Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.11.0             # Code formatting
+isort>=5.12.0              # Import sorting
+
+# Production Deployment (if hosting own server)
+gunicorn>=21.2.0           # WSGI server
+nginx-python>=1.0.0        # Reverse proxy config
+
+# OPTIONAL: Advanced Features
+# stripe>=6.0.0            # For payment processing (if needed)
+# celery>=5.3.0            # For background tasks (if needed)
+# redis>=5.0.0             # For caching (if needed)
+
+# Cost Estimates (Monthly):
+# - OpenAI API: €25-40 (moderate usage)
+# - Twilio SMS: €20-40 (200-800 SMS/month)
+# - SendGrid Email: €10-25 (up to 100k emails)
+# - Google Workspace (optional): €6/user/month
+# - Total API costs: €61-111/month for typical small practice
+
+# IMPORTANT NOTES:
+# 1. Not all packages are required - choose based on your needs
+# 2. SQLite is sufficient for practices with <1000 active patients
+# 3. Google Calendar integration requires Google Workspace account
+# 4. SMS costs vary significantly based on volume
+# 5. Consider using practice management system APIs instead of building from scratch
